@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Git Commands Presentation</title>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <script type="text/template" id="slides">
+                <!-- Slides Content -->
+                <section>
+                    <h1>🚀 Basic Git Commands Guide</h1>
+                    <p>Git is a powerful version control system that helps manage code efficiently.</p>
+                </section>
+                <section>
+                    <h2>📥 Clone a Repository</h2>
+                    <pre><code>git clone &lt;repository-url&gt;</code></pre>
+                    <p>✅ Copies an existing repository to your local machine.</p>
+                </section>
+                <section>
+                    <h2>🔍 Check Repository Status</h2>
+                    <pre><code>git status</code></pre>
+                    <p>📌 Shows the current state of your working directory.</p>
+                </section>
+                <section>
+                    <h2>🎯 Thank You!</h2>
+                    <p>💬 Questions? Let’s discuss!</p>
+                </section>
+            </script>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.slides').innerHTML = document.getElementById('slides').innerHTML;
+        Reveal.initialize();
+    </script>
+</body>
+</html>
