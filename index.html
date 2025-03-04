@@ -11,7 +11,6 @@
     <div class="reveal">
         <div class="slides">
             <script type="text/template" id="slides">
-                <!-- Slides Content -->
                 <section>
                     <h1>🚀 Basic Git Commands Guide</h1>
                     <p>Git is a powerful version control system that helps manage code efficiently.</p>
@@ -27,6 +26,57 @@
                     <p>📌 Shows the current state of your working directory.</p>
                 </section>
                 <section>
+                    <h2>📌 Add Changes to Staging Area</h2>
+                    <pre><code>git add &lt;file&gt;</code></pre>
+                    <p>✅ Stages modified or new files for the next commit.</p>
+                </section>
+                <section>
+                    <h2>💾 Commit Changes</h2>
+                    <pre><code>git commit -m "Your commit message"</code></pre>
+                    <p>📝 Saves changes to the local repository with a descriptive message.</p>
+                </section>
+                <section>
+                    <h2>🚀 Push Changes to Remote Repository</h2>
+                    <pre><code>git push origin &lt;branch-name&gt;</code></pre>
+                    <p>📡 Uploads local commits to the remote repository.</p>
+                </section>
+                <section>
+                    <h2>🔄 Pull Updates from Remote Repository</h2>
+                    <pre><code>git pull origin &lt;branch-name&gt;</code></pre>
+                    <p>📥 Fetches and integrates changes from the remote repository.</p>
+                </section>
+                <section>
+                    <h2>📊 View Changes</h2>
+                    <pre><code>git diff</code></pre>
+                    <p>🔍 Shows differences between the working directory and the last commit.</p>
+                </section>
+                <section>
+                    <h2>📜 View Commit History</h2>
+                    <pre><code>git log</code></pre>
+                    <p>📖 Displays a list of previous commits with details.</p>
+                </section>
+                <section>
+                    <h2>🔙 Undo the Last Commit</h2>
+                    <pre><code>git reset --soft HEAD~1</code></pre>
+                    <p>🛠 Undo the last commit but keep changes in the working directory.</p>
+                </section>
+                <section>
+                    <h2>🚀 Create and Switch Branches</h2>
+                    <pre><code>git branch &lt;branch-name&gt;</code></pre>
+                    <pre><code>git checkout &lt;branch-name&gt;</code></pre>
+                    <p>🌿 Create and switch to new branches for feature development.</p>
+                </section>
+                <section>
+                    <h2>🔄 Merge Branches</h2>
+                    <pre><code>git merge &lt;branch-name&gt;</code></pre>
+                    <p>🔀 Merges changes from one branch into another.</p>
+                </section>
+                <section>
+                    <h2>🗑️ Delete a Branch</h2>
+                    <pre><code>git branch -d &lt;branch-name&gt;</code></pre>
+                    <p>❌ Deletes a local branch when it's no longer needed.</p>
+                </section>
+                <section>
                     <h2>🎯 Thank You!</h2>
                     <p>💬 Questions? Let’s discuss!</p>
                 </section>
@@ -35,7 +85,15 @@
     </div>
     <script>
         document.querySelector('.slides').innerHTML = document.getElementById('slides').innerHTML;
-        Reveal.initialize();
+        Reveal.initialize({
+            autoSlide: 5000, // Auto-switch slides every 5 seconds
+            loop: true,      // Restart presentation after the last slide
+            progress: true,  // Show progress bar
+            slideNumber: true, // Show slide numbers
+            controls: false, // Hide navigation controls
+            transition: 'zoom' // Cool zoom transition
+        });
     </script>
 </body>
 </html>
+
