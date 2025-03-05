@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Git Commands Live Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <script type="text/template" id="slides">
+                <section>
+                    <h1>🚀 Live Git Commands Demo</h1>
+                    <p>Follow along as we execute real Git commands step by step.</p>
+                </section>
+                <section>
+                    <h2>📂 Initialize a Repository</h2>
+                    <pre><code>mkdir git-demo && cd git-demo
+git init</code></pre>
+                    <p>✅ Creates a new Git repository.</p>
+                </section>
+                <section>
+                    <h2>📥 Clone an Existing Repository</h2>
+                    <pre><code>git clone &lt;repository-url&gt;</code></pre>
+                    <p>✅ Downloads an existing repository.</p>
+                </section>
+                <section>
+                    <h2>🔍 Check Repository Status</h2>
+                    <pre><code>git status</code></pre>
+                    <p>📌 Shows untracked and modified files.</p>
+                </section>
+                <section>
+                    <h2>📝 Create and Modify Files</h2>
+                    <pre><code>echo "Hello, Git!" > demo.txt</code></pre>
+                    <p>📌 Adds a new file.</p>
+                </section>
+                <section>
+                    <h2>📌 Stage Changes</h2>
+                    <pre><code>git add demo.txt</code></pre>
+                    <p>✅ Stages modified files.</p>
+                </section>
+                <section>
+                    <h2>💾 Commit Changes</h2>
+                    <pre><code>git commit -m "Initial commit"</code></pre>
+                    <p>📝 Saves changes locally.</p>
+                </section>
+                <section>
+                    <h2>🚀 Push Changes to Remote</h2>
+                    <pre><code>git push origin main</code></pre>
+                    <p>📡 Uploads local commits.</p>
+                </section>
+                <section>
+                    <h2>🔄 Pull Updates</h2>
+                    <pre><code>git pull origin main</code></pre>
+                    <p>📥 Fetches the latest changes.</p>
+                </section>
+                <section>
+                    <h2>🌿 Create and Switch Branches</h2>
+                    <pre><code>git branch feature-branch
+git checkout feature-branch</code></pre>
+                    <p>✅ Creates and moves to a new branch.</p>
+                </section>
+                <section>
+                    <h2>🔄 Merge Branches</h2>
+                    <pre><code>git checkout main
+git merge feature-branch</code></pre>
+                    <p>🔀 Combines changes.</p>
+                </section>
+                <section>
+                    <h2>🛠 Undo Last Commit</h2>
+                    <pre><code>git reset --soft HEAD~1</code></pre>
+                    <p>🔄 Reverts the last commit.</p>
+                </section>
+                <section>
+                    <h2>⏳ Stash Changes</h2>
+                    <pre><code>git stash</code></pre>
+                    <p>📌 Temporarily saves changes.</p>
+                </section>
+                <section>
+                    <h2>⚠️ Merge Conflicts</h2>
+                    <pre><code>git merge conflicting-branch</code></pre>
+                    <p>🚨 Resolve conflicts manually.</p>
+                </section>
+                <section>
+                    <h2>🎥 Live Demo Video</h2>
+                    <iframe width="800" height="450" src="https://asciinema.org/a/demo_id" frameborder="0" allowfullscreen></iframe>
+                </section>
+                <section>
+                    <h2>🎯 Thank You!</h2>
+                    <p>💬 Questions? Let's discuss!</p>
+                </section>
+            </script>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.slides').innerHTML = document.getElementById('slides').innerHTML;
+        Reveal.initialize({
+            autoSlide: 5000,
+            loop: true,
+            progress: true,
+            slideNumber: true,
+            controls: false,
+            transition: 'zoom'
+        });
+    </script>
+</body>
+</html>
